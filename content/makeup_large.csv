@@ -1,0 +1,288 @@
+,Brand,Product_Name,Hex_Value,Hue,Saturation,Value,Lightness,Group
+0,Fenty,PRO FILT'R,fde9de,21.0,0.12,0.99,94,Fenty Beauty
+1,Fenty,PRO FILT'R,fde7da,22.0,0.14,0.99,93,Fenty Beauty
+2,Fenty,PRO FILT'R,fde3cc,28.0,0.19,0.99,92,Fenty Beauty
+3,Fenty,PRO FILT'R,f2d3b1,31.0,0.27,0.95,87,Fenty Beauty
+4,Fenty,PRO FILT'R,fce1c6,30.0,0.21,0.99,91,Fenty Beauty
+5,Fenty,PRO FILT'R,efd1b7,28.0,0.23,0.94,86,Fenty Beauty
+6,Fenty,PRO FILT'R,f4cca8,28.0,0.31,0.96,85,Fenty Beauty
+7,Fenty,PRO FILT'R,e8bfa3,24.0,0.3,0.91,80,Fenty Beauty
+8,Fenty,PRO FILT'R,fad5b8,26.0,0.26,0.98,88,Fenty Beauty
+9,Fenty,PRO FILT'R,e9c39f,29.0,0.32,0.91,81,Fenty Beauty
+10,Fenty,PRO FILT'R,e8bc99,27.0,0.34,0.91,80,Fenty Beauty
+11,Fenty,PRO FILT'R,e2ad85,26.0,0.41,0.89,75,Fenty Beauty
+12,Fenty,PRO FILT'R,eeba93,26.0,0.38,0.93,80,Fenty Beauty
+13,Fenty,PRO FILT'R,dfad89,25.0,0.39,0.87,75,Fenty Beauty
+14,Fenty,PRO FILT'R,d9a57d,26.0,0.42,0.85,72,Fenty Beauty
+15,Fenty,PRO FILT'R,e4ac7c,28.0,0.46,0.89,75,Fenty Beauty
+16,Fenty,PRO FILT'R,dca77d,27.0,0.43,0.86,73,Fenty Beauty
+17,Fenty,PRO FILT'R,d59d6d,28.0,0.49,0.84,69,Fenty Beauty
+18,Fenty,PRO FILT'R,e7ae85,25.0,0.42,0.91,76,Fenty Beauty
+19,Fenty,PRO FILT'R,dcb17d,33.0,0.43,0.86,75,Fenty Beauty
+20,Fenty,PRO FILT'R,ca9262,28.0,0.51,0.79,65,Fenty Beauty
+21,Fenty,PRO FILT'R,d28f58,27.0,0.58,0.82,65,Fenty Beauty
+22,Fenty,PRO FILT'R,d39063,24.0,0.53,0.83,66,Fenty Beauty
+23,Fenty,PRO FILT'R,d39156,28.0,0.59,0.83,66,Fenty Beauty
+24,Fenty,PRO FILT'R,ac7752,25.0,0.52,0.67,55,Fenty Beauty
+25,Fenty,PRO FILT'R,b67849,26.0,0.6,0.71,56,Fenty Beauty
+26,Fenty,PRO FILT'R,bd7b45,27.0,0.63,0.74,58,Fenty Beauty
+27,Fenty,PRO FILT'R,c98256,23.0,0.57,0.79,61,Fenty Beauty
+28,Fenty,PRO FILT'R,ca875a,24.0,0.55,0.79,63,Fenty Beauty
+29,Fenty,PRO FILT'R,a86b3f,25.0,0.63,0.66,51,Fenty Beauty
+30,Fenty,PRO FILT'R,a65e23,27.0,0.79,0.65,48,Fenty Beauty
+31,Fenty,PRO FILT'R,9d5d2d,26.0,0.71,0.62,46,Fenty Beauty
+32,Fenty,PRO FILT'R,ab6939,25.0,0.67,0.67,51,Fenty Beauty
+33,Fenty,PRO FILT'R,894f29,24.0,0.7,0.54,40,Fenty Beauty
+34,Fenty,PRO FILT'R,9b5b35,22.0,0.66,0.61,46,Fenty Beauty
+35,Fenty,PRO FILT'R,824f30,23.0,0.63,0.51,39,Fenty Beauty
+36,Fenty,PRO FILT'R,7d452c,19.0,0.65,0.49,36,Fenty Beauty
+37,Fenty,PRO FILT'R,6d3b20,21.0,0.71,0.43,31,Fenty Beauty
+38,Fenty,PRO FILT'R,683a20,22.0,0.69,0.41,30,Fenty Beauty
+39,Fenty,PRO FILT'R,583218,24.0,0.73,0.35,25,Fenty Beauty
+40,Iman,Second to None,e1bea4,26.0,0.27,0.88,80,Black Founded BIPOC-recommended Brands
+41,Iman,Second to None,e5ae86,25.0,0.41,0.9,76,Black Founded BIPOC-recommended Brands
+42,Iman,Second to None,c38e63,27.0,0.49,0.76,64,Black Founded BIPOC-recommended Brands
+43,Iman,Second to None,ac703d,28.0,0.65,0.67,53,Black Founded BIPOC-recommended Brands
+44,Iman,Second to None,9e6209,36.0,0.94,0.62,47,Black Founded BIPOC-recommended Brands
+45,Iman,Second to None,855723,32.0,0.74,0.52,41,Black Founded BIPOC-recommended Brands
+46,Iman,Second to None,793f0d,28.0,0.89,0.47,34,Black Founded BIPOC-recommended Brands
+47,Iman,Second to None,64300a,25.0,0.9,0.39,27,Black Founded BIPOC-recommended Brands
+48,Beauty Bakerie,#1 CAKE MIX,532e1e,18.0,0.64,0.33,24,Black Founded BIPOC-recommended Brands
+49,Beauty Bakerie,#1 CAKE MIX,4e2a1a,18.0,0.67,0.31,22,Black Founded BIPOC-recommended Brands
+50,Beauty Bakerie,#1 CAKE MIX,623f2c,21.0,0.55,0.38,30,Black Founded BIPOC-recommended Brands
+51,Beauty Bakerie,#1 CAKE MIX,8e532b,24.0,0.7,0.56,42,Black Founded BIPOC-recommended Brands
+52,Beauty Bakerie,#1 CAKE MIX,985223,24.0,0.77,0.6,43,Black Founded BIPOC-recommended Brands
+53,Beauty Bakerie,#1 CAKE MIX,a86738,25.0,0.67,0.66,50,Black Founded BIPOC-recommended Brands
+54,Beauty Bakerie,#1 CAKE MIX,a16f4c,25.0,0.53,0.63,52,Black Founded BIPOC-recommended Brands
+55,Beauty Bakerie,#1 CAKE MIX,a4683b,26.0,0.64,0.64,50,Black Founded BIPOC-recommended Brands
+56,Beauty Bakerie,#1 CAKE MIX,a4683b,26.0,0.64,0.64,50,Black Founded BIPOC-recommended Brands
+57,Beauty Bakerie,#1 CAKE MIX,ba7246,23.0,0.62,0.73,55,Black Founded BIPOC-recommended Brands
+58,Beauty Bakerie,#1 CAKE MIX,a86d46,24.0,0.58,0.66,52,Black Founded BIPOC-recommended Brands
+59,Beauty Bakerie,#1 CAKE MIX,b47c57,24.0,0.52,0.71,57,Black Founded BIPOC-recommended Brands
+60,Beauty Bakerie,#1 CAKE MIX,cc9561,29.0,0.52,0.8,66,Black Founded BIPOC-recommended Brands
+61,Beauty Bakerie,#1 CAKE MIX,d6a878,31.0,0.44,0.84,72,Black Founded BIPOC-recommended Brands
+62,Beauty Bakerie,#1 CAKE MIX,d0a37f,27.0,0.39,0.82,71,Black Founded BIPOC-recommended Brands
+63,Beauty Bakerie,#1 CAKE MIX,f1c78e,35.0,0.41,0.95,83,Black Founded BIPOC-recommended Brands
+64,Beauty Bakerie,#1 CAKE MIX,f2cea2,33.0,0.33,0.95,85,Black Founded BIPOC-recommended Brands
+65,Beauty Bakerie,#1 CAKE MIX,f5dab6,34.0,0.26,0.96,89,Black Founded BIPOC-recommended Brands
+66,Beauty Bakerie,#1 CAKE MIX,e9c096,30.0,0.36,0.91,81,Black Founded BIPOC-recommended Brands
+67,Beauty Bakerie,#1 CAKE MIX,edcbab,29.0,0.28,0.93,84,Black Founded BIPOC-recommended Brands
+68,Beauty Bakerie,#1 CAKE MIX,f2dac1,31.0,0.2,0.95,89,Black Founded BIPOC-recommended Brands
+69,Beauty Bakerie,#1 CAKE MIX,f2dbbb,35.0,0.23,0.95,89,Black Founded BIPOC-recommended Brands
+70,Beauty Bakerie,#1 CAKE MIX,f3dabc,33.0,0.23,0.95,89,Black Founded BIPOC-recommended Brands
+71,Beauty Bakerie,#1 CAKE MIX,f3dbbc,34.0,0.23,0.95,89,Black Founded BIPOC-recommended Brands
+72,Beauty Bakerie,#1 CAKE MIX,f6e2c7,34.0,0.19,0.96,91,Black Founded BIPOC-recommended Brands
+73,Beauty Bakerie,#1 CAKE MIX,f4dfc9,31.0,0.18,0.96,90,Black Founded BIPOC-recommended Brands
+74,Beauty Bakerie,#1 CAKE MIX,f9ecc5,45.0,0.21,0.98,94,Black Founded BIPOC-recommended Brands
+75,Beauty Bakerie,#1 CAKE MIX,f9ebcd,41.0,0.18,0.98,94,Black Founded BIPOC-recommended Brands
+76,Beauty Bakerie,#1 CAKE MIX,f3e2ce,32.0,0.15,0.95,91,Black Founded BIPOC-recommended Brands
+77,Beauty Bakerie,#1 CAKE MIX,f5e8d7,34.0,0.12,0.96,93,Black Founded BIPOC-recommended Brands
+78,Black Up,Matifying Fluid,eed1b5,29.0,0.24,0.93,86,Black Founded BIPOC-recommended Brands
+79,Black Up,Matifying Fluid,daaa80,28.0,0.41,0.85,73,Black Founded BIPOC-recommended Brands
+80,Black Up,Matifying Fluid,d7a778,30.0,0.44,0.84,72,Black Founded BIPOC-recommended Brands
+81,Black Up,Matifying Fluid,dfa46f,28.0,0.5,0.87,72,Black Founded BIPOC-recommended Brands
+82,Black Up,Matifying Fluid,d28f66,23.0,0.51,0.82,66,Black Founded BIPOC-recommended Brands
+83,Black Up,Matifying Fluid,ad6d41,24.0,0.62,0.68,52,Black Founded BIPOC-recommended Brands
+84,Black Up,Matifying Fluid,c98c60,25.0,0.52,0.79,64,Black Founded BIPOC-recommended Brands
+85,Black Up,Matifying Fluid,bf7a43,27.0,0.65,0.75,58,Black Founded BIPOC-recommended Brands
+86,Black Up,Matifying Fluid,ac734c,24.0,0.56,0.67,54,Black Founded BIPOC-recommended Brands
+87,Black Up,Matifying Fluid,b97245,23.0,0.63,0.73,55,Black Founded BIPOC-recommended Brands
+88,Black Up,Matifying Fluid,a0522c,20.0,0.73,0.63,44,Black Founded BIPOC-recommended Brands
+89,Black Up,Matifying Fluid,9e5a35,21.0,0.66,0.62,46,Black Founded BIPOC-recommended Brands
+90,Black Up,Matifying Fluid,97472e,14.0,0.7,0.59,41,Black Founded BIPOC-recommended Brands
+91,Black Up,Matifying Fluid,7e3e2a,14.0,0.67,0.49,34,Black Founded BIPOC-recommended Brands
+92,Black Up,Matifying Fluid,7b3625,12.0,0.7,0.48,32,Black Founded BIPOC-recommended Brands
+93,Black Up,Matifying Fluid,653129,8.0,0.59,0.4,27,Black Founded BIPOC-recommended Brands
+94,Black Up,Matifying Fluid,3b2218,17.0,0.59,0.23,16,Black Founded BIPOC-recommended Brands
+95,Black Up,Matifying Fluid,352315,26.0,0.6,0.21,16,Black Founded BIPOC-recommended Brands
+96,Black Opal,True Color,b77d57,24.0,0.52,0.72,65,Black Founded BIPOC-recommended Brands
+97,Black Opal,True Color,bc835b,25.0,0.52,0.74,60,Black Founded BIPOC-recommended Brands
+98,Black Opal,True Color,b67753,22.0,0.54,0.71,56,Black Founded BIPOC-recommended Brands
+99,Black Opal,True Color,b77d53,25.0,0.55,0.72,58,Black Founded BIPOC-recommended Brands
+100,Black Opal,True Color,7b4e34,22.0,0.58,0.48,38,Black Founded BIPOC-recommended Brands
+101,Black Opal,True Color,7a523a,23.0,0.52,0.48,39,Black Founded BIPOC-recommended Brands
+102,Black Opal,True Color,71412d,18.0,0.6,0.44,33,Black Founded BIPOC-recommended Brands
+103,Black Opal,True Color,81523e,18.0,0.52,0.51,40,Black Founded BIPOC-recommended Brands
+104,Black Opal,True Color,6a4338,13.0,0.47,0.42,33,Black Founded BIPOC-recommended Brands
+105,Black Opal,True Color,543022,17.0,0.6,0.33,24,Black Founded BIPOC-recommended Brands
+106,Black Opal,True Color,5d3e2e,20.0,0.51,0.36,30,Black Founded BIPOC-recommended Brands
+107,Black Opal,True Color,4c2e22,17.0,0.55,0.3,23,Black Founded BIPOC-recommended Brands
+108,Laws of Nature,Foxy Finish,a66c4b,22.0,0.55,0.65,51,Black Founded BIPOC-recommended Brands
+109,Laws of Nature,Foxy Finish,bb8f7f,16.0,0.32,0.73,63,Black Founded BIPOC-recommended Brands
+110,Laws of Nature,Foxy Finish,dfb9af,12.0,0.22,0.87,78,Black Founded BIPOC-recommended Brands
+111,Laws of Nature,Foxy Finish,b7743c,27.0,0.67,0.72,55,Black Founded BIPOC-recommended Brands
+112,Laws of Nature,Foxy Finish,924829,18.0,0.72,0.57,40,Black Founded BIPOC-recommended Brands
+113,Laws of Nature,Foxy Finish,a37452,25.0,0.5,0.64,53,Black Founded BIPOC-recommended Brands
+114,Laws of Nature,Foxy Finish,6c4529,25.0,0.62,0.42,33,Black Founded BIPOC-recommended Brands
+115,Laws of Nature,Foxy Finish,321407,18.0,0.86,0.2,11,Black Founded BIPOC-recommended Brands
+116,Laws of Nature,Foxy Finish,cc9d72,29.0,0.44,0.8,68,Black Founded BIPOC-recommended Brands
+117,Laws of Nature,Foxy Finish,a66c49,23.0,0.56,0.65,51,Black Founded BIPOC-recommended Brands
+118,Laws of Nature,Foxy Finish,be784d,23.0,0.59,0.75,57,Black Founded BIPOC-recommended Brands
+119,Laws of Nature,Foxy Finish,592d24,10.0,0.6,0.35,24,Black Founded BIPOC-recommended Brands
+120,Laws of Nature,Foxy Finish,b68e6f,26.0,0.39,0.71,62,Black Founded BIPOC-recommended Brands
+121,Laws of Nature,Foxy Finish,b19277,28.0,0.33,0.69,63,Black Founded BIPOC-recommended Brands
+122,Laws of Nature,Foxy Finish,a3724a,27.0,0.55,0.64,53,Black Founded BIPOC-recommended Brands
+123,Laws of Nature,Foxy Finish,742b13,15.0,0.84,0.45,29,Black Founded BIPOC-recommended Brands
+124,Laws of Nature,Foxy Finish,deb399,23.0,0.31,0.87,76,Black Founded BIPOC-recommended Brands
+125,Lancôme,Teint Idole,fdece4,19.0,0.1,0.99,95,White Founded BIPOC-recommended Brands
+126,Lancôme,Teint Idole,f4d1ab,31.0,0.3,0.96,86,White Founded BIPOC-recommended Brands
+127,Lancôme,Teint Idole,eec1a0,25.0,0.33,0.93,82,White Founded BIPOC-recommended Brands
+128,Lancôme,Teint Idole,eac398,31.0,0.35,0.92,81,White Founded BIPOC-recommended Brands
+129,Lancôme,Teint Idole,e9be9e,26.0,0.32,0.91,80,White Founded BIPOC-recommended Brands
+130,Lancôme,Teint Idole,deba96,30.0,0.32,0.87,78,White Founded BIPOC-recommended Brands
+131,Lancôme,Teint Idole,dcb190,26.0,0.35,0.86,76,White Founded BIPOC-recommended Brands
+132,Lancôme,Teint Idole,ddb391,27.0,0.34,0.87,76,White Founded BIPOC-recommended Brands
+133,Lancôme,Teint Idole,e4ba8c,31.0,0.39,0.89,78,White Founded BIPOC-recommended Brands
+134,Lancôme,Teint Idole,e2b78f,29.0,0.37,0.89,78,White Founded BIPOC-recommended Brands
+135,Lancôme,Teint Idole,e5b189,26.0,0.4,0.9,76,White Founded BIPOC-recommended Brands
+136,Lancôme,Teint Idole,f3c796,32.0,0.38,0.95,83,White Founded BIPOC-recommended Brands
+137,Lancôme,Teint Idole,f3bf90,28.0,0.41,0.95,81,White Founded BIPOC-recommended Brands
+138,Lancôme,Teint Idole,e1af8c,25.0,0.38,0.88,76,White Founded BIPOC-recommended Brands
+139,Lancôme,Teint Idole,ddb184,30.0,0.4,0.87,75,White Founded BIPOC-recommended Brands
+140,Lancôme,Teint Idole,dca77d,27.0,0.43,0.86,73,White Founded BIPOC-recommended Brands
+141,Lancôme,Teint Idole,d6a77d,28.0,0.42,0.84,72,White Founded BIPOC-recommended Brands
+142,Lancôme,Teint Idole,d7a17f,23.0,0.41,0.84,71,White Founded BIPOC-recommended Brands
+143,Lancôme,Teint Idole,d7a17d,24.0,0.42,0.84,71,White Founded BIPOC-recommended Brands
+144,Lancôme,Teint Idole,dda876,29.0,0.47,0.87,73,White Founded BIPOC-recommended Brands
+145,Lancôme,Teint Idole,e39f72,24.0,0.5,0.89,72,White Founded BIPOC-recommended Brands
+146,Lancôme,Teint Idole,cf9162,26.0,0.53,0.81,66,White Founded BIPOC-recommended Brands
+147,Lancôme,Teint Idole,e0a16b,28.0,0.52,0.88,72,White Founded BIPOC-recommended Brands
+148,Lancôme,Teint Idole,d0975d,30.0,0.55,0.82,67,White Founded BIPOC-recommended Brands
+149,Lancôme,Teint Idole,d29e6d,29.0,0.48,0.82,69,White Founded BIPOC-recommended Brands
+150,Lancôme,Teint Idole,c9925e,29.0,0.53,0.79,65,White Founded BIPOC-recommended Brands
+151,Lancôme,Teint Idole,ce8c5c,25.0,0.55,0.81,64,White Founded BIPOC-recommended Brands
+152,Lancôme,Teint Idole,bb7e44,29.0,0.64,0.73,58,White Founded BIPOC-recommended Brands
+153,Lancôme,Teint Idole,ce9163,26.0,0.52,0.81,66,White Founded BIPOC-recommended Brands
+154,Lancôme,Teint Idole,bd7f56,24.0,0.54,0.74,59,White Founded BIPOC-recommended Brands
+155,Lancôme,Teint Idole,935427,25.0,0.73,0.58,43,White Founded BIPOC-recommended Brands
+156,Lancôme,Teint Idole,bc7c56,22.0,0.54,0.74,58,White Founded BIPOC-recommended Brands
+157,Lancôme,Teint Idole,aa6941,23.0,0.62,0.67,51,White Founded BIPOC-recommended Brands
+158,Lancôme,Teint Idole,9b5e41,19.0,0.58,0.61,46,White Founded BIPOC-recommended Brands
+159,Lancôme,Teint Idole,8a4d30,19.0,0.65,0.54,40,White Founded BIPOC-recommended Brands
+160,Lancôme,Teint Idole,7b3c11,24.0,0.86,0.48,33,White Founded BIPOC-recommended Brands
+161,Lancôme,Teint Idole,703e23,21.0,0.69,0.44,32,White Founded BIPOC-recommended Brands
+162,Lancôme,Teint Idole,502716,18.0,0.73,0.31,21,White Founded BIPOC-recommended Brands
+163,Lancôme,Teint Idole,7c3f2c,14.0,0.65,0.49,34,White Founded BIPOC-recommended Brands
+164,Lancôme,Teint Idole,391b11,15.0,0.7,0.22,14,White Founded BIPOC-recommended Brands
+165,MAC,Studio Fix,d8b593,30.0,0.32,0.85,76,White Founded BIPOC-recommended Brands
+166,MAC,Studio Fix,fbbe91,25.0,0.42,0.98,82,White Founded BIPOC-recommended Brands
+167,MAC,Studio Fix,d2ae88,31.0,0.35,0.82,74,White Founded BIPOC-recommended Brands
+168,MAC,Studio Fix,d0a87f,30.0,0.39,0.82,72,White Founded BIPOC-recommended Brands
+169,MAC,Studio Fix,d79051,28.0,0.62,0.84,66,White Founded BIPOC-recommended Brands
+170,MAC,Studio Fix,ffdbc2,25.0,0.24,1.0,90,White Founded BIPOC-recommended Brands
+171,MAC,Studio Fix,ffc9a9,22.0,0.34,1.0,85,White Founded BIPOC-recommended Brands
+172,MAC,Studio Fix,ffd7b4,28.0,0.29,1.0,89,White Founded BIPOC-recommended Brands
+173,MAC,Studio Fix,dfc7a8,34.0,0.25,0.87,82,White Founded BIPOC-recommended Brands
+174,MAC,Studio Fix,dabc96,34.0,0.31,0.85,78,White Founded BIPOC-recommended Brands
+175,MAC,Studio Fix,d9b88f,33.0,0.34,0.85,77,White Founded BIPOC-recommended Brands
+176,MAC,Studio Fix,d4b588,36.0,0.36,0.83,76,White Founded BIPOC-recommended Brands
+177,MAC,Studio Fix,d0ae84,33.0,0.37,0.82,73,White Founded BIPOC-recommended Brands
+178,MAC,Studio Fix,d3b18a,32.0,0.35,0.83,75,White Founded BIPOC-recommended Brands
+179,MAC,Studio Fix,d1ac7f,33.0,0.39,0.82,73,White Founded BIPOC-recommended Brands
+180,MAC,Studio Fix,d0a97b,32.0,0.41,0.82,72,White Founded BIPOC-recommended Brands
+181,MAC,Studio Fix,c9a177,31.0,0.41,0.79,69,White Founded BIPOC-recommended Brands
+182,MAC,Studio Fix,c5986d,29.0,0.45,0.77,66,White Founded BIPOC-recommended Brands
+183,MAC,Studio Fix,d5844b,25.0,0.65,0.84,63,White Founded BIPOC-recommended Brands
+184,MAC,Studio Fix,db864d,24.0,0.65,0.86,64,White Founded BIPOC-recommended Brands
+185,MAC,Studio Fix,b5855a,28.0,0.5,0.71,60,White Founded BIPOC-recommended Brands
+186,MAC,Studio Fix,b38456,30.0,0.52,0.7,59,White Founded BIPOC-recommended Brands
+187,MAC,Studio Fix,e5d1be,29.0,0.17,0.9,85,White Founded BIPOC-recommended Brands
+188,MAC,Studio Fix,e0c8ae,31.0,0.22,0.88,82,White Founded BIPOC-recommended Brands
+189,MAC,Studio Fix,e0c1a2,30.0,0.28,0.88,80,White Founded BIPOC-recommended Brands
+190,MAC,Studio Fix,dcbca2,27.0,0.26,0.86,79,White Founded BIPOC-recommended Brands
+191,MAC,Studio Fix,dbbc9f,29.0,0.27,0.86,78,White Founded BIPOC-recommended Brands
+192,MAC,Studio Fix,d9b28d,29.0,0.35,0.85,75,White Founded BIPOC-recommended Brands
+193,MAC,Studio Fix,d5b293,28.0,0.31,0.84,75,White Founded BIPOC-recommended Brands
+194,MAC,Studio Fix,d5ad89,28.0,0.36,0.84,74,White Founded BIPOC-recommended Brands
+195,MAC,Studio Fix,d1a88a,25.0,0.34,0.82,72,White Founded BIPOC-recommended Brands
+196,MAC,Studio Fix,cfa67d,30.0,0.4,0.81,71,White Founded BIPOC-recommended Brands
+197,MAC,Studio Fix,cba275,31.0,0.42,0.8,70,White Founded BIPOC-recommended Brands
+198,MAC,Studio Fix,c39368,28.0,0.47,0.76,65,White Founded BIPOC-recommended Brands
+199,MAC,Studio Fix,b28050,29.0,0.55,0.7,58,White Founded BIPOC-recommended Brands
+200,MAC,Studio Fix,b9855a,27.0,0.51,0.73,60,White Founded BIPOC-recommended Brands
+201,MAC,Studio Fix,b27949,27.0,0.59,0.7,56,White Founded BIPOC-recommended Brands
+202,MAC,Studio Fix,ae7a50,27.0,0.54,0.68,56,White Founded BIPOC-recommended Brands
+203,MAC,Studio Fix,a77246,27.0,0.58,0.65,53,White Founded BIPOC-recommended Brands
+204,MAC,Studio Fix,a0714d,26.0,0.52,0.63,52,White Founded BIPOC-recommended Brands
+205,MAC,Studio Fix,a9734e,24.0,0.54,0.66,54,White Founded BIPOC-recommended Brands
+206,MAC,Studio Fix,724a32,23.0,0.56,0.45,36,White Founded BIPOC-recommended Brands
+207,Bobbi Brown,Skin Long-Wear,f5e0c8,32.0,0.18,0.96,90,White Founded BIPOC-recommended Brands
+208,Bobbi Brown,Skin Long-Wear,efcfaf,30.0,0.27,0.94,85,White Founded BIPOC-recommended Brands
+209,Bobbi Brown,Skin Long-Wear,e8bca4,21.0,0.29,0.91,80,White Founded BIPOC-recommended Brands
+210,Bobbi Brown,Skin Long-Wear,e5bc92,30.0,0.36,0.9,79,White Founded BIPOC-recommended Brands
+211,Bobbi Brown,Skin Long-Wear,debe97,33.0,0.32,0.87,79,White Founded BIPOC-recommended Brands
+212,Bobbi Brown,Skin Long-Wear,e9c9aa,30.0,0.27,0.91,83,White Founded BIPOC-recommended Brands
+213,Bobbi Brown,Skin Long-Wear,eac49f,30.0,0.32,0.92,82,White Founded BIPOC-recommended Brands
+214,Bobbi Brown,Skin Long-Wear,ecc3a1,27.0,0.32,0.93,82,White Founded BIPOC-recommended Brands
+215,Bobbi Brown,Skin Long-Wear,e2b996,28.0,0.34,0.89,78,White Founded BIPOC-recommended Brands
+216,Bobbi Brown,Skin Long-Wear,d29e7b,24.0,0.41,0.82,70,White Founded BIPOC-recommended Brands
+217,Bobbi Brown,Skin Long-Wear,d9a779,29.0,0.44,0.85,72,White Founded BIPOC-recommended Brands
+218,Bobbi Brown,Skin Long-Wear,d6a075,27.0,0.45,0.84,70,White Founded BIPOC-recommended Brands
+219,Bobbi Brown,Skin Long-Wear,d3996f,25.0,0.47,0.83,68,White Founded BIPOC-recommended Brands
+220,Bobbi Brown,Skin Long-Wear,d7a770,32.0,0.48,0.84,72,White Founded BIPOC-recommended Brands
+221,Bobbi Brown,Skin Long-Wear,ca8f63,26.0,0.51,0.79,65,White Founded BIPOC-recommended Brands
+222,Bobbi Brown,Skin Long-Wear,d29d71,27.0,0.46,0.82,69,White Founded BIPOC-recommended Brands
+223,Bobbi Brown,Skin Long-Wear,d09059,28.0,0.57,0.82,65,White Founded BIPOC-recommended Brands
+224,Bobbi Brown,Skin Long-Wear,ca9450,33.0,0.6,0.79,66,White Founded BIPOC-recommended Brands
+225,Bobbi Brown,Skin Long-Wear,cc9357,31.0,0.57,0.8,66,White Founded BIPOC-recommended Brands
+226,Bobbi Brown,Skin Long-Wear,b27c3b,33.0,0.67,0.7,57,White Founded BIPOC-recommended Brands
+227,Bobbi Brown,Skin Long-Wear,a86829,30.0,0.76,0.66,50,White Founded BIPOC-recommended Brands
+228,Bobbi Brown,Skin Long-Wear,b87840,28.0,0.65,0.72,57,White Founded BIPOC-recommended Brands
+229,Bobbi Brown,Skin Long-Wear,9a4e28,20.0,0.74,0.6,42,White Founded BIPOC-recommended Brands
+230,Bobbi Brown,Skin Long-Wear,81562f,29.0,0.64,0.51,41,White Founded BIPOC-recommended Brands
+231,Bobbi Brown,Skin Long-Wear,aa6a2f,29.0,0.72,0.67,51,White Founded BIPOC-recommended Brands
+232,Bobbi Brown,Skin Long-Wear,9b5127,22.0,0.75,0.61,43,White Founded BIPOC-recommended Brands
+233,Bobbi Brown,Skin Long-Wear,7e462d,19.0,0.64,0.49,36,White Founded BIPOC-recommended Brands
+234,Bobbi Brown,Skin Long-Wear,8e4922,22.0,0.76,0.56,39,White Founded BIPOC-recommended Brands
+235,Bobbi Brown,Skin Long-Wear,7b2800,20.0,1.0,0.48,29,White Founded BIPOC-recommended Brands
+236,Bobbi Brown,Skin Long-Wear,623726,17.0,0.61,0.38,28,White Founded BIPOC-recommended Brands
+237,Hegai and Esther,Photo Perfect,f6a762,28.0,0.6,0.96,75,Nigerian-owned makeup brands
+238,Hegai and Esther,Photo Perfect,d76b4c,13.0,0.65,0.84,58,Nigerian-owned makeup brands
+239,Hegai and Esther,Photo Perfect,ad543d,12.0,0.65,0.68,47,Nigerian-owned makeup brands
+240,Hegai and Esther,Photo Perfect,c86835,21.0,0.74,0.78,55,Nigerian-owned makeup brands
+241,Hegai and Esther,Photo Perfect,904134,8.0,0.64,0.56,38,Nigerian-owned makeup brands
+242,Hegai and Esther,Photo Perfect,92524e,4.0,0.47,0.57,43,Nigerian-owned makeup brands
+243,Hegai and Esther,Photo Perfect,bf6b44,19.0,0.64,0.75,55,Nigerian-owned makeup brands
+244,Hegai and Esther,Photo Perfect,915831,24.0,0.66,0.57,43,Nigerian-owned makeup brands
+245,Hegai and Esther,Photo Perfect,ea8944,25.0,0.71,0.92,67,Nigerian-owned makeup brands
+246,Hegai and Esther,Photo Perfect,eebb7a,34.0,0.49,0.93,80,Nigerian-owned makeup brands
+247,House of Tara,Oil Free,ae7748,28.0,0.59,0.68,55,Nigerian-owned makeup brands
+248,House of Tara,Oil Free,b68358,27.0,0.52,0.71,59,Nigerian-owned makeup brands
+249,House of Tara,Oil Free,a77546,29.0,0.58,0.65,54,Nigerian-owned makeup brands
+250,House of Tara,Oil Free,a36c3b,28.0,0.64,0.64,51,Nigerian-owned makeup brands
+251,House of Tara,Oil Free,89562c,27.0,0.68,0.54,42,Nigerian-owned makeup brands
+252,House of Tara,Oil Free,9a572c,23.0,0.71,0.6,44,Nigerian-owned makeup brands
+253,House of Tara,Oil Free,904d2e,19.0,0.68,0.56,41,Nigerian-owned makeup brands
+254,House of Tara,Oil Free,783f23,20.0,0.71,0.47,34,Nigerian-owned makeup brands
+255,House of Tara,Oil Free,75391c,20.0,0.76,0.46,32,Nigerian-owned makeup brands
+256,House of Tara,Oil Free,602d18,18.0,0.75,0.38,25,Nigerian-owned makeup brands
+257,House of Tara,Oil Free,5b2717,14.0,0.75,0.36,23,Nigerian-owned makeup brands
+258,Trim & Prissy,Flawless Finish,e2ac7c,28.0,0.45,0.89,75,Nigerian-owned makeup brands
+259,Trim & Prissy,Flawless Finish,b17e4f,29.0,0.55,0.69,57,Nigerian-owned makeup brands
+260,Trim & Prissy,Flawless Finish,8c5b3d,23.0,0.56,0.55,44,Nigerian-owned makeup brands
+261,Trim & Prissy,Flawless Finish,b0704d,21.0,0.56,0.69,54,Nigerian-owned makeup brands
+262,Trim & Prissy,Flawless Finish,d89757,30.0,0.6,0.85,68,Nigerian-owned makeup brands
+263,Trim & Prissy,Flawless Finish,c48b58,28.0,0.55,0.77,63,Nigerian-owned makeup brands
+264,Trim & Prissy,Hi - Def,fcd1a7,30.0,0.34,0.99,87,Nigerian-owned makeup brands
+265,Trim & Prissy,Hi - Def,e2ac7c,28.0,0.45,0.89,75,Nigerian-owned makeup brands
+266,Trim & Prissy,Hi - Def,b17e51,28.0,0.54,0.69,57,Nigerian-owned makeup brands
+267,Trim & Prissy,Hi - Def,9d6d49,26.0,0.54,0.62,51,Nigerian-owned makeup brands
+268,Trim & Prissy,Hi - Def,b0704d,21.0,0.56,0.69,54,Nigerian-owned makeup brands
+269,Trim & Prissy,Hi - Def,8c5b3d,23.0,0.56,0.55,44,Nigerian-owned makeup brands
+270,Trim & Prissy,Hi - Def,795340,20.0,0.47,0.47,39,Nigerian-owned makeup brands
+271,Elsas Pro,Full Coverage,815d51,15.0,0.37,0.51,43,Nigerian-owned makeup brands
+272,Elsas Pro,Full Coverage,845949,16.0,0.45,0.52,42,Nigerian-owned makeup brands
+273,Elsas Pro,Full Coverage,8b614b,21.0,0.46,0.55,45,Nigerian-owned makeup brands
+274,Elsas Pro,Full Coverage,906656,17.0,0.4,0.56,47,Nigerian-owned makeup brands
+275,Elsas Pro,Full Coverage,774c43,10.0,0.44,0.47,37,Nigerian-owned makeup brands
+276,Elsas Pro,Full Coverage,734b41,12.0,0.43,0.45,36,Nigerian-owned makeup brands
+277,Elsas Pro,Full Coverage,88614d,20.0,0.43,0.53,45,Nigerian-owned makeup brands
+278,Elsas Pro,Full Coverage,ba8261,22.0,0.48,0.73,60,Nigerian-owned makeup brands
+279,Elsas Pro,Full Coverage,d9ab88,26.0,0.37,0.85,74,Nigerian-owned makeup brands
+280,Elsas Pro,Full Coverage,d49a74,24.0,0.45,0.83,69,Nigerian-owned makeup brands
+281,Elsas Pro,Full Coverage,cf8a60,23.0,0.54,0.81,64,Nigerian-owned makeup brands
+282,Kuddy,Matte Wear,c78660,22.0,0.52,0.78,62,Nigerian-owned makeup brands
+283,Kuddy,Matte Wear,e0a260,31.0,0.57,0.88,72,Nigerian-owned makeup brands
+284,Kuddy,Matte Wear,cc8b65,22.0,0.5,0.8,64,Nigerian-owned makeup brands
+285,Kuddy,Matte Wear,c78660,22.0,0.52,0.78,62,Nigerian-owned makeup brands
+286,Kuddy,Matte Wear,b2724f,21.0,0.56,0.7,54,Nigerian-owned makeup brands
