@@ -15,4 +15,4 @@ Key libraries and frameworks used include:
 - Tensorflow
 - Python(Pandas, matplotlib and seaborn)
 - Python(Flask)
-- Javascript (ReactJS)
+- Javascript
