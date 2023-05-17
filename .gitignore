@@ -1,2 +1,6 @@
+# trained models
 ./models
-main.py
+
+# pre-trained model
+checkpoint_ic_d161.pth
+
