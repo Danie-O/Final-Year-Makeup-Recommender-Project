@@ -17,6 +17,7 @@ Key libraries and frameworks used include:
 - Tensorflow
 - Python(Pandas, matplotlib and seaborn)
 - Python(Flask)
+<<<<<<< HEAD
 - Javascript (ReactJS)
 
 To run the Flask app,
@@ -26,3 +27,6 @@ You can access the landing page via:
 After running the flask app, a Plotly window would pop up showing the classes and their predicted probabilities for the given image.
 Close the popup window to get redirected to a page showing product recommendations with embedded links to shop for the products.
 If you are not redirected, access the recommendations via: <http://127.0.0.1:4216/>
+=======
+- Javascript
+>>>>>>> 8df105ab3d5f4f35e17867cb3407d1acf43bf9c3
