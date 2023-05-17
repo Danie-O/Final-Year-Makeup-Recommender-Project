@@ -3,18 +3,36 @@
 	<head> 
     <title>Precise Beauty Makeup Product Recommender</title>
 	<meta charset = "utf-8" /> 	
-	<link rel = "icon" href = "https://i.pinimg.com/236x/6c/cb/ac/6ccbac64a795932f31a00cc819e117b9--fashion-magazines-young-women.jpg" type = "image/x-icon">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 	</head> 
 
 	<body class="text-center">
-		<form class="form-signin" method=post enctype=multipart/form-data>
-			<img class="mb-4" src="/static/pytorch.png" alt="" width="72">
-			<h1 class="h3 mb-3 font-weight-normal">PredictionResults: </h1>
+		<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+			<center style="padding: 5px;"><h3 size="5px" class="text-primary"><u>Precise Beauty: makeup classifier</u></h3></center>    
+		</nav>
+
+		<center>
+		<form method=post enctype=multipart/form-data>
+			<h1 class="h3 mb-3 font-weight-normal">Prediction Results: </h1>
 			<h5 class="h5 mb-3 font-weight-normal">Detected Image: {{ class_name }}</h5>
 			<h5 class="h6 mb-3 font-weight-normal">Predicted Class ID: {{ class_id }}</h5>
 		</form>
+		<br><br>
+		<div style="height: 250px; color: #e3f2fd;"></div>
+		<div style="background-color: #24c7fe; height: 150px;">
+			<center>
+				<br>
+				<p><font size="+1"><em>Enter your email address below to receive your recommendations via email</em></font></p>
+				<form action="">
+					<label for="email">Your Email:</label>
+					<input type="email" name="user-email" placeholder="johndoe@gmail.com">
+					<button class="btn btn-lg btn-primary btn-sm" type="submit">Send recommendations</button>
+				</form>
+			</center>
+		</div>
+		</center>
 		
 		<script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
