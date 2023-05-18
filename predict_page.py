@@ -72,33 +72,33 @@ def show_predict_page():
     st.write("Try this out to get product recommendations just for you!")
     file = st.file_uploader("Upload your image")
 
-    k = st.slider("Select number of products to recommend", 1, 10, 3)
+    k = st.slider("Select number of products to recommend", 1, 20, 3)
     ok = st.button("""Get makeup recommendations!""")
 
     if file:
-        st.write("Image uploaded successfully!")
+        st.write("Image uploaded successfully! Open sidebar to view uploaded image.")
+        with st.sidebar:
+            # Show the image being classified
+            img = Image.open(file)
 
-        # Show the image being classified
-        img = Image.open(file)
+            # Resize the image while maintaining the aspect ratio
+            width, height = img.size
+            new_width = 400  # Specify the desired width
+            new_height = int(height * (new_width / width))
+            resized_image = img.resize((new_width, new_height), resample=Image.LANCZOS)
 
-        # Resize the image while maintaining the aspect ratio
-        width, height = img.size
-        new_width = 200  # Specify the desired width
-        new_height = int(height * (new_width / width))
-        resized_image = img.resize((400, 400), resample=Image.LANCZOS)
-
-        # Display the resized image
-        st.image(resized_image, caption='Uploaded Image', use_column_width=True)
+            # Display the resized image
+            st.image(resized_image, caption='Uploaded Image', use_column_width=True)
 
         if ok:
             st.write("Generating predictions, sit tight!")
             # Generate prediction using loaded model
             prediction = predict_class(file)
+            st.write("""#### Predicted class: """, list(prediction.keys())[0])
             st.write(prediction)
-            st.write("""The model predicts that the image uploaded is of a person with: """)
-            st.write("""###### prediction[0]""")
+            # st.write()
 
             probs, classes = recommend_products(file, model.to(device))
-            result = view_classify(probs, classes, cat_to_name, rec)
+            result = view_classify(probs, classes, cat_to_name, rec, k=k)
             # st.write(result)
 
