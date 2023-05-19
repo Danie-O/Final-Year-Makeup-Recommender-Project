@@ -24,6 +24,8 @@ with open('./content/skin.json', 'r') as f:
 rec = pd.read_csv('./content/makeup.csv')
 
 
+#Caching the model for faster loading
+@st.cache_resource
 def predict_class(img):
     probs, classes = recommend_products(img, model.to(device))
     probs_dict = dict(zip(classes, probs))
@@ -96,7 +98,6 @@ def show_predict_page():
             prediction = predict_class(file)
             st.write("""#### Predicted class: """, list(prediction.keys())[0])
             st.write(prediction)
-            # st.write()
 
             probs, classes = recommend_products(file, model.to(device))
             result = view_classify(probs, classes, cat_to_name, rec, k=k)
