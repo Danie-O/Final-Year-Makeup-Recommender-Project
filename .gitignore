@@ -7,5 +7,7 @@ checkpoint_ic_d161.pth
 # file containing prediction function that might be used at some point
 dummy_file.py
 
+# Jupyter notebook checkpoints
+Skintype/.ipynb_checkpoints
 
 
