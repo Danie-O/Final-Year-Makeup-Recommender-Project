@@ -41,12 +41,26 @@ def process_image(image):
     # tensor.numpy().transpose(1, 2, 0)
     preprocess = transforms.Compose([
         transforms.Resize(256),
-        transforms.CenterCrop(224),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], 
                              std=[0.229, 0.224, 0.225])
     ])
     image = preprocess(image)
+
+    # def tensor_to_image(tensor):
+    #     """Convert the tensor output from 'process_image' to a numpy array."""
+    #     tensor = tensor.cpu().detach().numpy()
+        
+    #     # Scale the values to [0, 255]
+    #     tensor = (tensor - tensor.min()) / (tensor.max() - tensor.min())
+    #     tensor = 255 * tensor
+        
+    #     # Convert the numpy array to an image array
+    #     image_array = tensor.transpose((1, 2, 0)).astype(np.uint8)
+        
+    #     return image_array
+    # pil_image = tensor_to_image(image)
+    # return pil_image
     return image
 
 def recommend_products(image_path, model, topk=3):
