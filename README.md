@@ -32,10 +32,11 @@ flask run
 After running the flask app, a Plotly window would pop up showing the classes and their predicted probabilities for the given image.
 Close the popup window and access the landing page via: <http://127.0.0.1:5000/>
 
+Note: the flask app is still under construction so the endpoint above only returns a static landing page.
 
 - To run the Streamlit app locally, navigate to the project directory and run the following command in the terminal:
 ```
-streamlit run steamlit-app.py
+streamlit run app.py
 ```
 
 A link would be generated and displayed in the terminal, through which the streamlit application can be accessed.
