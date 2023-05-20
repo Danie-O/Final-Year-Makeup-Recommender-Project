@@ -8,7 +8,6 @@ import json
 
 from helper_funcs import load_checkpoint, recommend_products, device
 
-
 def load_model():
     model, class_to_idx = load_checkpoint('final_checkpoint_ic_d161.pth')
     return [model, class_to_idx]
