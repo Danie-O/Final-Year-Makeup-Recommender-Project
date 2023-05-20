@@ -73,7 +73,8 @@ def show_predict_page():
     st.write("Try this out to get product recommendations just for you!")
     file = st.file_uploader("Upload your image")
 
-    k = st.slider("Select number of products to recommend", 1, 20, 3)
+    st.write("""##### Select number of products to recommend""")
+    k = st.slider("Slide to select number", 1, 20, 3)
     ok = st.button("""Get makeup recommendations!""")
 
     if file:
