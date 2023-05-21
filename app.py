@@ -1,9 +1,3 @@
-import streamlit
-from predict_page import show_predict_page
-
-show_predict_page()
-
-
 # import pandas as pd
 # import os
 # from flask import Flask, request, redirect, flash, render_template, send_from_directory, url_for
