@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import pandas as pd
+import plotly.graph_objects as go
 
 import PIL
 from PIL import Image
@@ -15,23 +16,35 @@ from torch.utils.data.sampler import SubsetRandomSampler
 import torch.nn as nn
 import torch.nn.functional as F
 
+from keras import models
+import tensorflow as tf
+import io
+import pathlib 
+
+
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+def load_checkpoint(feature: str):
+    if feature.lower() == "skintone":
+        checkpoint = torch.load('final_checkpoint_ic_d161.pth', map_location=torch.device('cpu'))
+        # checkpoint['input_size'] = 25088
+        model = checkpoint['model']
+        model.classifier = checkpoint['classifier']
+        model.load_state_dict = (checkpoint['state_dict'])
+        model.class_to_idx = checkpoint['class_to_idx']
+        optimizer = checkpoint['optimizer']
+        epochs = checkpoint['epochs']
 
-def load_checkpoint(filepath):
-    checkpoint = torch.load(filepath, map_location=torch.device('cpu'))
-    # checkpoint['input_size'] = 25088
-    model = checkpoint['model']
-    model.classifier = checkpoint['classifier']
-    model.load_state_dict = (checkpoint['state_dict'])
-    model.class_to_idx = checkpoint['class_to_idx']
-    optimizer = checkpoint['optimizer']
-    epochs = checkpoint['epochs']
+        for param in model.parameters():
+            param.requires_grad = False
 
-    for param in model.parameters():
-        param.requires_grad = False
+        return model, checkpoint['class_to_idx']
+    elif feature.lower() == "skintype":
+        model = models.load_model('models/Skintype-Model')
+        return model
+        
 
-    return model, checkpoint['class_to_idx']
+""" HELPER FUNCTIONS FOR SKINTONE CLASSES PREPROCESSING & PREDICTION."""
 
 def process_image(image):
     ''' Scales, crops, and normalizes a PIL image for a PyTorch model,
@@ -85,8 +98,6 @@ def recommend_products(image_path, model, topk=3):
 
     return (e.data.numpy().squeeze().tolist() for e in topk)
 
-import plotly.graph_objects as go
-import pandas as pd
 
 # load the makeup dataset
 rec = pd.read_csv('./content/makeup.csv')
@@ -150,3 +161,53 @@ def view_classify(img_path, prob, classes, cat_to_name, rec, k=3):
     # rec1.style.format({'ProductURL': make_clickable})
 
     return (rec1)
+
+
+""" HELPER FUNCTIONS FOR SKINTYPE CLASSES PREPROCESSING AND PREDICTIONS."""
+
+# Create a function to import an image and resize it to be able to be used with our model
+def load_and_prep_image(file, img_shape=224):
+    """ Reads in an image from filename, turns it into a tensor and reshapes into (224,224,3). """
+   
+    # Read in the image and decode it into a tensor
+    # image_bytes = file.read()
+    image = Image.open(file)
+    image = image.resize((img_shape, img_shape))
+    # Convert the PIL Image to a TensorFlow tensor
+    image = tf.keras.preprocessing.image.img_to_array(image)
+    # Rescale the image (get all values between 0 and 1)
+    image = image / 255.0
+    return image
+
+
+# Setup paths to our data directories
+train_dir = "Skintype/skintype-data/train/"
+data_dir = pathlib.Path(train_dir)
+class_names = np.array(sorted([item.name for item in data_dir.glob('*')]))
+
+
+def predict_skintype(model, file, class_names=class_names):
+   """
+   Imports an image located at filename, makes a prediction with model
+   and plots the image with the predicted class as the title.
+   """
+   # Import the target image and preprocess it
+   img = load_and_prep_image(file)
+
+   # Make a prediction
+   pred = model.predict(tf.expand_dims(img, axis=0))
+
+   if len(pred[0]) > 1:
+      pred_class = class_names[tf.argmax(pred[0])]
+   else:
+    pred_class = class_names[int(tf.round(pred[0]))]
+    print('Prediction Probabilities : ', pred[0])
+
+    print(pred_class)
+    return pred_class
+
+from PIL import Image
+
+image = Image.open("content/valid/darkskin/download.jpg")
+skintype_model = load_checkpoint("skintype")
+print(predict_skintype(skintype_model, "content/valid/darkskin/download.jpg"))
