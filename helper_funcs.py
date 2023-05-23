@@ -60,21 +60,6 @@ def process_image(image):
                              std=[0.229, 0.224, 0.225])
     ])
     image = preprocess(image)
-
-    # def tensor_to_image(tensor):
-    #     """Convert the tensor output from 'process_image' to a numpy array."""
-    #     tensor = tensor.cpu().detach().numpy()
-        
-    #     # Scale the values to [0, 255]
-    #     tensor = (tensor - tensor.min()) / (tensor.max() - tensor.min())
-    #     tensor = 255 * tensor
-        
-    #     # Convert the numpy array to an image array
-    #     image_array = tensor.transpose((1, 2, 0)).astype(np.uint8)
-        
-    #     return image_array
-    # pil_image = tensor_to_image(image)
-    # return pil_image
     return image
 
 def recommend_products(image_path, model, topk=3):
@@ -172,9 +157,14 @@ def load_and_prep_image(file, img_shape=224):
     # Read in the image and decode it into a tensor
     # image_bytes = file.read()
     image = Image.open(file)
+    
     image = image.resize((img_shape, img_shape))
+    image = image.astype('float32')
+
     # Convert the PIL Image to a TensorFlow tensor
-    image = tf.keras.preprocessing.image.img_to_array(image)
+    # image = tf.keras.preprocessing.image.img_to_array(image)
+    image = np.array(image)
+    
     # Rescale the image (get all values between 0 and 1)
     image = image / 255.0
     return image
@@ -184,7 +174,7 @@ def load_and_prep_image(file, img_shape=224):
 train_dir = "Skintype/skintype-data/train/"
 data_dir = pathlib.Path(train_dir)
 class_names = np.array(sorted([item.name for item in data_dir.glob('*')]))
-
+print(type(class_names))
 
 def predict_skintype(model, file, class_names=class_names):
    """
@@ -201,13 +191,9 @@ def predict_skintype(model, file, class_names=class_names):
       pred_class = class_names[tf.argmax(pred[0])]
    else:
     pred_class = class_names[int(tf.round(pred[0]))]
-    print('Prediction Probabilities : ', pred[0])
+    print('Prediction Probabilities : ', len(pred[0]))
+    
+    # return pred_class
 
-    print(pred_class)
-    return pred_class
-
-from PIL import Image
-
-image = Image.open("content/valid/darkskin/download.jpg")
 skintype_model = load_checkpoint("skintype")
-print(predict_skintype(skintype_model, "content/valid/darkskin/download.jpg"))
+predict_skintype(skintype_model, "content/valid/darkskin/download.jpg")
