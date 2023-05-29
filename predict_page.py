@@ -6,38 +6,60 @@ import pandas as pd
 import plotly.graph_objects as go
 import json
 
-from helper_funcs import load_checkpoint, recommend_products, device, load_and_prep_image, predict_skintype
+from helper_funcs import predict_skintone, device, predict_skintype
+from keras.models import load_model
+import torch
 
 
-def load_model(type: str):
-    model = load_checkpoint(type)
-    return model
+def load_checkpoint(feature: str):
+    if feature.lower() == "skintone":
+        checkpoint = torch.load('final_checkpoint_ic_d161.pth', map_location=torch.device('cpu'))
+        model = checkpoint['model']
+        model.classifier = checkpoint['classifier']
+        model.load_state_dict = (checkpoint['state_dict'])
+        model.class_to_idx = checkpoint['class_to_idx']
+        optimizer = checkpoint['optimizer']
+        epochs = checkpoint['epochs']
+        for param in model.parameters():
+            param.requires_grad = False
+        return model
+    elif feature.lower() == "skintype":
+        model2 = load_model('models/Skintype-Model')
+        return model2
+
+
+#Caching the model for faster loading
+@st.cache_resource 
+def load_models():
+    global skintone_model, skintype_model
+    skintone_model = load_checkpoint("skintone")
+    skintype_model = load_checkpoint("skintype")
+    return skintone_model, skintype_model
 
 
 # Load pre-trained models
-skintone_model = load_model("skintone")[0]
-
+skintone_model, skintype_model = load_models()
 
 # Load json file containing category to class name mappings
 with open('./content/skin.json', 'r') as f:
     cat_to_name = json.load(f)
 
-
-# load the makeup dataset
+# Load the makeup dataset
 rec = pd.read_csv('./content/makeup.csv')
+skintype_classes = {"normal_skin": "Normal skin", "oily_skin": "Oily skin"}
+
 
 #Caching the model for faster loading
 @st.cache_resource
-def predict_class(img):
-    probs, classes = recommend_products(img, skintone_model.to(device))
+def predict_skintone_class(img):
+    probs, classes = predict_skintone(img, skintone_model.to(device))
     probs_dict = dict(zip(classes, probs))
     class_dict = {0: "Dark skin", 1: "Olive skin", 2: "Porcelain skin"}
     return {class_dict[i]: float(probs_dict[i]) for i in classes}
 
 
-def view_classify(prob, classes, cat_to_name, rec, k=3):
+def view_classify(prob, classes, skintype, cat_to_name, rec, k=3):
     classes_dict = {0: "Dark skin", 1: "Olive skin", 2: "Porcelain skin"}
-
     # Convert the probability and classes data to a Pandas DataFrame for easier manipulation
     data = {'Probability': prob, 'Class': [classes_dict[i] for i in classes]}
     df_prob = pd.DataFrame(data)
@@ -56,8 +78,9 @@ def view_classify(prob, classes, cat_to_name, rec, k=3):
     st.plotly_chart(fig)
 
     # Select products equivalent to skintone of uploaded image
-    skintype = cat_to_name[str(classes[0])]
-    rec1 = rec.loc[rec['SkinTone'] == skintype][:k]
+    skintone = cat_to_name[str(classes[0])]
+    rec1 = rec.loc[(rec['SkinTone'] == skintone) & (rec['SkinType'] == skintype)][:k]
+    # rec1 = rec.loc[rec['SkinTone'] == skintype][:k]
 
     # Display recommended products based on the model's predictions in tabular format
     st.subheader('Product Recommendations')
@@ -66,12 +89,11 @@ def view_classify(prob, classes, cat_to_name, rec, k=3):
     rec1_html = rec1_html.replace('<td>', '<td style="text-align: left;">')
     st.write(rec1_html, unsafe_allow_html=True)
 
-skintype_model = load_model("skintype")
 
 def show_predict_page():
     st.title("Makeup Recommender System")
     st.write("Try this out to get product recommendations just for you!")
-    file = st.file_uploader("Upload your image")
+    file = st.file_uploader("Upload your image", type=["jpg", "jpeg"])
 
     st.write("""##### Select number of products to recommend""")
     k = st.slider("Slide to select number", 1, 20, 3)
@@ -95,15 +117,19 @@ def show_predict_page():
         if ok:
             st.write("Generating predictions, sit tight!")
             # Generate prediction using loaded model
-            skintone_prediction = predict_class(file)
-            st.write("""#### Predicted class: """, list(skintone_prediction.keys())[0])
-            st.write(skintone_prediction)
+            skintone_prediction = predict_skintone_class(file)
+            st.write("""##### Predicted Skintone: """, list(skintone_prediction.keys())[0])
 
-            skintype_prediction = predict_skintype(skintype_model, file)
-            st.write("It has been detected that your skin type is {}.".format(skintype_prediction))
-            st.write("You can look out for products for {} skin to guide you in selecting from the products recommended below!".format(skintype_prediction))
+            # skintype_prediction = predict_skintype(skintype_model, file)
+            # st.write("It has been detected that your skin type is {}.".format(skintype_prediction))
+            # st.write("You can look out for products for {} skin to guide you in selecting from the products recommended below!".format(skintype_prediction))
+            
+            skintype = predict_skintype(skintype_model, file)
+            st.write("""##### Predicted Skintype: """, skintype_classes[skintype])
+            probs, classes = predict_skintone(file, skintone_model.to(device))
 
-            probs, classes = recommend_products(file, skintone_model.to(device))
-            result = view_classify(probs, classes, cat_to_name, rec, k=k)
+            result = view_classify(probs, classes, skintype, cat_to_name, rec, k=k)
             # st.write(result)
+    elif ok:
+        st.write("WARNING: You need to upload an image to get recommendations!")
 
