@@ -12,3 +12,4 @@ dummy_file.py
 
 # .pyc cache files
 *.pyc
+*.cpython
