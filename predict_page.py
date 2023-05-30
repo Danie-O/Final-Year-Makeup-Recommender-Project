@@ -45,21 +45,20 @@ with open('./content/skin.json', 'r') as f:
     cat_to_name = json.load(f)
 
 # Load the makeup dataset
-rec = pd.read_csv('./content/makeup.csv')
-skintype_classes = {"normal_skin": "Normal skin", "oily_skin": "Oily skin"}
-
+makeup = pd.read_csv('./content/makeup.csv')
+skintype_classes = {"normal_skin": "normal skin", "oily_skin": "oily skin"}
 
 #Caching the model for faster loading
 @st.cache_resource
 def predict_skintone_class(img):
     probs, classes = predict_skintone(img, skintone_model.to(device))
     probs_dict = dict(zip(classes, probs))
-    class_dict = {0: "Dark skin", 1: "Olive skin", 2: "Porcelain skin"}
+    class_dict = {0: "dark skin", 1: "olive skin", 2: "porcelain skin"}
     return {class_dict[i]: float(probs_dict[i]) for i in classes}
 
 
-def view_classify(prob, classes, skintype, cat_to_name, rec, k=3):
-    classes_dict = {0: "Dark skin", 1: "Olive skin", 2: "Porcelain skin"}
+def view_classify(prob, classes, cat_to_name,  skintype, dataset, k=3):
+    classes_dict = {0: "dark skin", 1: "olive skin", 2: "porcelain skin"}
     # Convert the probability and classes data to a Pandas DataFrame for easier manipulation
     data = {'Probability': prob, 'Class': [classes_dict[i] for i in classes]}
     df_prob = pd.DataFrame(data)
@@ -79,12 +78,13 @@ def view_classify(prob, classes, skintype, cat_to_name, rec, k=3):
 
     # Select products equivalent to skintone of uploaded image
     skintone = cat_to_name[str(classes[0])]
-    rec1 = rec.loc[(rec['SkinTone'] == skintone) & (rec['SkinType'] == skintype)][:k]
-    # rec1 = rec.loc[rec['SkinTone'] == skintype][:k]
+    rec1 = pd.DataFrame()
+    rec1 = rec1.append(dataset[(dataset['SkinType'] == skintype) & (dataset['SkinTone'] == skintone)].head(k))
+    # rec1 = dataset.loc[(dataset['SkinTone'] == skintone) & (dataset['SkinType'] == skintype)][:k]
 
-    # Display recommended products based on the model's predictions in tabular format
+    # Display recommended products based on the predicted skintone and skintype in tabular format
     st.subheader('Product Recommendations')
-    rec1_html = rec1.to_html(escape=False)
+    rec1_html = rec1.to_html(index=False, escape=False)
     rec1_html = rec1_html.replace('<th>', '<th style="text-align: left;">')
     rec1_html = rec1_html.replace('<td>', '<td style="text-align: left;">')
     st.write(rec1_html, unsafe_allow_html=True)
@@ -96,7 +96,7 @@ def show_predict_page():
     file = st.file_uploader("Upload your image", type=["jpg", "jpeg"])
 
     st.write("""##### Select number of products to recommend""")
-    k = st.slider("Slide to select number", 1, 20, 3)
+    k = st.slider("Slide to select number", 1, 10, 3)
     ok = st.button("""Get makeup recommendations!""")
 
     if file:
@@ -120,15 +120,12 @@ def show_predict_page():
             skintone_prediction = predict_skintone_class(file)
             st.write("""##### Predicted Skintone: """, list(skintone_prediction.keys())[0])
 
-            # skintype_prediction = predict_skintype(skintype_model, file)
-            # st.write("It has been detected that your skin type is {}.".format(skintype_prediction))
-            # st.write("You can look out for products for {} skin to guide you in selecting from the products recommended below!".format(skintype_prediction))
-            
             skintype = predict_skintype(skintype_model, file)
-            st.write("""##### Predicted Skintype: """, skintype_classes[skintype])
+            skintype_class = skintype_classes[skintype]
+            st.write("""##### Predicted Skintype: """, skintype_class)
             probs, classes = predict_skintone(file, skintone_model.to(device))
 
-            result = view_classify(probs, classes, skintype, cat_to_name, rec, k=k)
+            result = view_classify(probs, classes, cat_to_name, skintype=skintype_class, dataset=makeup, k=k)
             # st.write(result)
     elif ok:
         st.write("WARNING: You need to upload an image to get recommendations!")
