@@ -10,6 +10,9 @@ final_model.pth
 dummy_file.py
 
 # .pyc cache files
-*.pyc
-*.cpython
 __pycache__
+
+# virtual environment
+recommend-venv/
+
+
