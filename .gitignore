@@ -12,4 +12,4 @@ dummy_file.py
 # .pyc cache files
 *.pyc
 *.cpython
-_pycache_
+__pycache__
