@@ -4,12 +4,12 @@
 # pre-trained models
 checkpoint_ic_d161.pth
 final_checkpoint_ic_d161.pth
+final_model.pth
 
 # file containing prediction function that might be used at some point
 dummy_file.py
 
-# Jupyter notebook checkpoints
-
 # .pyc cache files
 *.pyc
 *.cpython
+_pycache_
