@@ -13,7 +13,8 @@ import torch
 
 def load_checkpoint(feature: str):
     if feature.lower() == "skintone":
-        checkpoint = torch.load('final_checkpoint_ic_d161.pth', map_location=torch.device('cpu'))
+        # checkpoint = torch.load('final_checkpoint_ic_d161.pth', map_location=torch.device('cpu'))
+        checkpoint = torch.load('new_model_02_06.pth', map_location=torch.device('cpu'))
         model = checkpoint['model']
         model.classifier = checkpoint['classifier']
         model.load_state_dict = (checkpoint['state_dict'])
@@ -118,6 +119,7 @@ def show_predict_page():
             st.write("Generating predictions, sit tight!")
             # Generate prediction using loaded model
             skintone_prediction = predict_skintone_class(file)
+            st.write(skintone_prediction)
             st.write("""##### Predicted Skintone: """, list(skintone_prediction.keys())[0])
 
             skintype = predict_skintype(skintype_model, file)
