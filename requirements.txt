@@ -13,7 +13,7 @@ keras
 
 Werkzeug==0.16.0
 Flask==2.0.1
-numpy==1.17.4
+# numpy==1.17.4
 seaborn==0.9.0
 # wheel==0.33.6
 wheel==0.40.0
