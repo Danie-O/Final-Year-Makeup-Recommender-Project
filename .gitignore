@@ -9,8 +9,11 @@ new_model_02_06.pth
 new_model_04_06.pth
 latest_skintone_model.pth
 
+# notebook containing EDA of initial dataset 
+ML/EDA_sample_data.ipynb
+
 # file containing prediction function that might be used at some point
-dummy_file.py
+ML/dummy_file.py
 
 # .pyc cache files
 __pycache__
