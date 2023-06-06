@@ -1,9 +1,0 @@
-[theme]
-base="light"
-
-# Background color for the main content area
-backgroundColor="#fdf2f2"
-
-# Background color for sidebar and most interactive widgets
-secondaryBackgroundColor="#f7bd9d"
-font="serif"
