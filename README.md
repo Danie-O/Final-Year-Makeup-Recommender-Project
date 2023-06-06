@@ -24,7 +24,7 @@ Libraries and frameworks used include:
 
 Usage
 ----
-- To run the Flask app locally, navigate to the project directory and run the following command in the terminal:
+To run the Flask app locally, navigate to the project directory and run the following command in the terminal:
 ```
 flask run
 ```
@@ -34,13 +34,13 @@ Close the popup window and access the landing page via: <http://127.0.0.1:5000/>
 
 Note: the flask app is still under construction so the endpoint above only returns a static landing page.
 
-To run the Streamlit app locally
-- Navigate to the project directory:
+To run the Streamlit app locally:
+- Navigate to the project directory
 ```
 cd Final-Year-Makeup-Recommender-Project/RecommenderSystem
 ```
 
-- Run the following command in the terminal:
+- Run the following command in the terminal
 ```
 streamlit run streamlit_app.py
 ```
