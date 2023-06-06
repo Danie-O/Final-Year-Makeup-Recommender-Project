@@ -85,7 +85,7 @@ def load_checkpoint(filepath):
     return model, checkpoint['class_to_idx']
 
 
-model, class_to_idx = load_checkpoint('checkpoint_ic_d161.pth')
+model, class_to_idx = load_checkpoint('final_checkpoint_ic_d161.pth')
 # idx_to_class = {v: k for k, v in class_to_idx.items()}
 
 
