@@ -42,7 +42,7 @@ cd Final-Year-Makeup-Recommender-Project/RecommenderSystem
 
 - Run the following command in the terminal:
 ```
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 A link would be generated and displayed in the terminal, through which the streamlit application can be accessed.
