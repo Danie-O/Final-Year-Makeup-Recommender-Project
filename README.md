@@ -3,12 +3,11 @@ Makeup-Product-Recommender-System
 
 Final year project: A recommender system for content-based recommendation of makeup products based on facial features identified from users' images.
 
-This recommender utilises a deep learning model, trained using Convolutional Neural Networks(CNNs), to predict the skintone class of a user.
-The model is then used to generate makeup product(foundation) recommendations by matching user skintones to products based on the skintone class which they fall under.
+This recommender utilises deep learning models which have been trained using the Convolutional Neural Network(CNN) algorithm, to predict the skintone and skintype class of a user. The models are then used to generate makeup product(foundation) recommendations by matching the predicted classes to products have the same skintone and skintype classes.
 
 A user can get recommendations through a simple web application that allows users to upload their image. The uploaded image is processed and the output returned to the user consists of:
 
-- Skintone-based makeup product recommendations
+- Makeup product recommendations
 - Links to purchase recommended products
 - A follow-up email with the recommended products (on request).
 
@@ -32,7 +31,7 @@ flask run
 After running the flask app, a Plotly window would pop up showing the classes and their predicted probabilities for the given image.
 Close the popup window and access the landing page via: <http://127.0.0.1:5000/>
 
-Note: the flask app is still under construction so the endpoint above only returns a static landing page.
+Note: the Flask app is still under construction so the endpoint above only returns a static landing page.
 
 To run the Streamlit app locally:
 - Navigate to the project directory
